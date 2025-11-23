@@ -1,0 +1,203 @@
+/* Base layout */
+.App {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #e8f5f1;
+  font-family: 'Inter', 'Courier New', monospace;
+}
+
+/* Section styling */
+section {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 960px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Headings */
+h1, h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00c8ff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #00ffaa;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #00ffaa;
+  border-bottom: 1px solid rgba(0,255,153,0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+/* Buttons */
+.resume-btn, button {
+  background: linear-gradient(90deg, #00ffaa, #00c8ff);
+  color: #04110c;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-btn:hover, button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,255,153,0.4);
+}
+
+/* Links */
+a {
+  color: #00c8ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Skills list */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.skills-list li {
+  background: rgba(0,255,153,0.1);
+  border: 1px solid rgba(0,255,153,0.3);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #00ffaa;
+}
+
+/* Header block */
+.site-header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.site-header p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+/* Logo animation (unchanged) */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional header block for legacy layout */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Contact form inputs with white background and cyan glow */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(0, 255, 200, 0.4);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #04110c;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00c8ff;
+  box-shadow: 0 0 8px rgba(0, 200, 255, 0.6);
+}
+
+/* Send Message button (already styled, but here for reference) */
+button,
+.resume-btn {
+  background: linear-gradient(90deg, #00ffaa, #00c8ff);
+  color: #04110c;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,255,153,0.4);
+}
+
+.hero-image {
+  width: 100%;           /* Full width of container */
+  max-height: 54vh;      /* Slimmer vertical height */
+  object-fit: contain;   /* Keeps proportions */
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-image {
+  padding: 1rem 0;
+}
